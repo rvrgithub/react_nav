@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  const links = ["service","Project","About"]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mid_div'><div>LOGOBAKERY</div>
+    <div className='links'>{links.map((e)=>{
+      return <p>{e}</p>
+    })}
+      </div>
+    <button>Contect</button></div>
     </div>
   );
 }
